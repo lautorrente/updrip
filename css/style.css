@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+li {
+  list-style-type: none;
+    
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* NAV */
+.principal-nav {
+  background-color: rgb(236, 236, 236);
+}
+.principal-nav ul {
+  padding-top: 20px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.principal-nav ul li {
+  padding: 10px;
+  margin: 10px;
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+nav ul li a:hover { 
+  color: #000000; 
+}
+nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.principal-nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.imagen-logo-nav {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;  
+  margin: -28px 10px 0;
+  z-index: 20;
+}
+
+/* SECTION I INDEX*/
+.header-dropI-section {
+  background-color: #000000;
+  height: 650px;
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.subsection-1 {
+  display: flex;
+  flex-direction: column;
+}
+.subsection-1 h3 {
+  font-family: 'Ysabeau', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #fff;
+} 
+.subsection-1 p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  color: #fff;
+} 
+.subsection-1 a{
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #fff;
+  height: 45px;
+  padding: 8px;
+  width: 120px;
+  margin: auto;
+  border-radius: 20px;
+}
+.subsection-1 a:hover{
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #fff;
+} 
+.subsection-2 img {
+  height: 700px;
+  width: 700px;
+  object-fit: contain;
+  margin-top: -120px;
+}
+/* SECTION II INDEX*/
+.dropII-section {
+  background-color: #ffffff;
+  height: 650px;
+  padding: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dII-subsection-1 {
+  display: flex;
+  flex-direction: column;
+}
+.dII-subsection-1 h3 {
+  font-family: 'Ysabeau', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #000000;
+} 
+.dII-subsection-1 p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  color: #000000;
+} 
+.dII-subsection-1 a{
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000000;
+  height: 45px;
+  padding: 8px;
+  width: 120px;
+  margin: auto;
+  border-radius: 20px;
+}
+.dII-subsection-1 a:hover{
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+} 
+.dII-subsection-2 img {
+  height: 700px;
+  width: 700px;
+  object-fit: contain;
+  margin-top: -120px;
+} 
+/* FOOTER ---------------------------------------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 20px;
+  background-color: #5d5d5d;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-column p {
+  margin-bottom: 10px;
+}
+
+.footer-column form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-column input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.footer-column button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer-column button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Styles for copyright */
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #5d5d5d;
+  text-align: center;
+}
+.copyright a{
+  color: #333;
+}
+.copyright a:hover{
+  color: #d6d6d6;
+  transition: all .5s ease;
+}
